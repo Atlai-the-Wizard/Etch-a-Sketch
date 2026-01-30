@@ -1,24 +1,15 @@
 const container = document.getElementById('container');
 
 function makeCells(numCells) {
-  for (let i = 0; i < numCells; i++) {
+  for (let i = 0; i < numCells * numCells; i++) {
     const cell = document.createElement('div');
     cell.classList.add('cells');
+    cell.style.width = 100 / numCells + `%`;
     // add mouseover event function
     container.appendChild(cell);
   }
 }
 
-// run makeCells function
 
-// const container = document.querySelector('.container');
 
-// function makeCells(numCells) {
-//   for (let i = 0; i < numCells; i++) {
-//     let cells = document.createElement('div');
-//     cells.classList.add('cells')
-//     container.appendChild(cells);
-//   }
-// }
-
-// makeCells(32);
+makeCells(16);
