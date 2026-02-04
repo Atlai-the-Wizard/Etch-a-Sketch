@@ -35,7 +35,7 @@ function newGrid() {
   }
 }
 
-// function that resets current grid to white
+// button that resets current grid to white
 clearGridButton.addEventListener('click', () => {
   clearGrid();
   makeCells(cellCount);
