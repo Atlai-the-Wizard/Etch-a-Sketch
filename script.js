@@ -47,4 +47,5 @@ newGridButton.addEventListener('click', () => {
   newGrid();
 })
 
+// default cell grid on page start
 makeCells(16);
